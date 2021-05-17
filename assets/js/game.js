@@ -239,8 +239,9 @@ function update(e) {
   const dt = (currentTime - GAME_STATE.lastTime) / 1000.0;
 
   if (GAME_STATE.gameOver) {
-    document.querySelector(".game-over").style.display = "block";
-    return;
+    document.location.href="gameover.html"
+    // document.querySelector(".game-over").style.display = "block";
+    // return;
   }
 
   if (playerHasWon()) {
