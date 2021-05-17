@@ -1,0 +1,192 @@
+/*CSS Lydie*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+html .body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background:url(/assets/img/space.jpg);
+    height: 100vh;
+    align-items:center;
+    background-size: cover;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#gameOver{
+    display:flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+#firstRow{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#secondRow{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* @keyframes invadersAnim {
+    0% {
+        top:0%;
+    }
+    50% {
+        top:100%;
+    }
+    100% {
+        top:0%;
+    }
+} */
+
+@keyframes item1Anim {
+    0% {
+        top:0%;
+    }
+    50% {
+        top:100%;
+    }
+    100% {
+        top:0%;
+    }
+}
+
+.item1{
+    width:5em;
+    height:auto;
+    animation: item1Anim 1.2s alternate infinite;
+    position:relative;
+}
+
+@keyframes item2Anim {
+    0% {
+        top:100%;
+    }
+    50% {
+        top:0%;
+    }
+    100% {
+        top:100%;
+    }
+}
+
+.item2{
+    width:5em;
+    height:auto;
+    animation: item2Anim 1.2s alternate infinite;
+    position:relative;
+}
+
+@keyframes item3Anim {
+    0% {
+        top:0%;
+    }
+    50% {
+        top:100%;
+    }
+    100% {
+        top:0%;
+    }
+}
+
+.item3{
+    width:5em;
+    height:auto;
+    animation: item3Anim 1.2s alternate infinite;
+    position:relative;
+}
+
+@keyframes item4Anim {
+    0% {
+        left:0%;
+    }
+    50% {
+        left:100%;
+    }
+    100% {
+        left:0%;
+    }
+}
+
+.item4{
+    width:5em;
+    height:auto;
+    animation: item4Anim 1.2s alternate infinite;
+    position:relative;
+}
+@keyframes item5Anim {
+    0% {
+        right:0%;
+    }
+    50% {
+        right:100%;
+    }
+    100% {
+        right:0%;
+    }
+}
+
+.item5{
+    width:5em;
+    height:auto;
+    animation: item5Anim 1.2s alternate infinite;
+    position:relative;
+}
+
+/*animation lettres Game Over Lydie*/
+.letter {
+    color: #ffffff;
+    font-size: 80px;font-family: 'Press Start 2P', cursive;
+    letter-spacing: 15px;
+    margin-bottom: 150px;
+    animation: flash 1.2s linear infinite;
+}
+@keyframes flash {
+    0% {
+        color: #71a9f3;
+        text-shadow: 0 0 7px #71a9f3;
+    }
+    90% {
+        color: #eb1ea6;
+        text-shadow: none;
+    }
+    100% {
+        color: #71a9f3;
+        text-shadow: 0 0 7px #71a9f3;
+    }
+}
+
+.letter:nth-child(1){
+    animation-delay: 0.1s;
+}
+.letter:nth-child(2){
+    animation-delay: 0.2s;
+}
+.letter:nth-child(3){
+    animation-delay: 0.3s;
+}
+.letter:nth-child(4){
+    animation-delay: 0.4s;
+}
+.letter:nth-child(5){
+    animation-delay: 0.5s;
+}
+.letter:nth-child(6){
+    animation-delay: 0.6s;
+}
+.letter:nth-child(7){
+    animation-delay: 0.7s;
+}
+.letter:nth-child(8){
+    animation-delay: 0.8s;
+}
+
+.fondu-out {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease-out;
+}
+/*fin animation lettres Lydie*/
+/*fin CSS Lydie*/

@@ -1,0 +1,47 @@
+/* Debut CSS Ludo */
+
+/* Typo Ludo */
+@font-face {
+    font-family: "invader";
+    src: url("/assets/typo/invaders.ttf");
+  }
+  @font-face {
+    font-family: "alien";
+    src: url("/assets/typo/alien.ttf");
+  }
+/* Fin typo Ludo */
+
+html .body{
+    height: 100%;
+    width: 100%;
+}
+#home{
+    background-image: url(/assets/img/wp7872665.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size : cover;
+    align-items: center;
+}
+h1{
+    color:whitesmoke;
+    text-align: center;
+    font-size: 7rem;
+    font-family: "alien";
+}
+h2{
+    color:whitesmoke;
+    text-align: center;
+    font-size: 3rem;
+    font-family: "invader";
+}
+.enterGame{
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px;
+    align-items: center;
+    border-radius: 20px;
+    color: whitesmoke;
+
+}
+
+/* Fin CSS Ludo */
